@@ -87,18 +87,27 @@ function Home() {
           {bunnyState === "punch" && <Lottie options={bunnyPunchOptions} height={300} width={300} />}
         </div>
         {bunnyState !== "yes" && <div className="buttons">
-          <Button     
-            $randomleft={randomPosition.randomLeft}
-            $randomtop={randomPosition.randomTop}
+        
+          <button     
+         //   $randomleft={randomPosition.randomLeft}
+           // $randomtop={randomPosition.randomTop}
+            //$hasstarted={hasStarted}
+            //onMouseEnter={() => handleHover(true)}
+            //onMouseLeave={() => handleHover(false)}
+               
+           onClick={() => setBunnyState("yes")} onMouseEnter={() => setBunnyState("normal")}
+          
+>Yes</button>
+          <Button
+           //onClick={() => setBunnyState("yes")} onMouseEnter={() => setBunnyState("normal")}
+                       $randomleft={randomPosition.randomLeft}
+           $randomtop={randomPosition.randomTop}
             $hasstarted={hasStarted}
             onMouseEnter={() => handleHover(true)}
             onMouseLeave={() => handleHover(false)}
->Yes</Button>
-          <button
-           onClick={() => setBunnyState("yes")} onMouseEnter={() => setBunnyState("normal")}
           >
             No
-          </button>
+          </Button>
         </div>}
       </div>
     </StyledHome >
