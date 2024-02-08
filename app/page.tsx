@@ -77,8 +77,8 @@ function Home() {
   return (
     <StyledHome data-testid="container">
       <div className="home-container">
-        {bunnyState === "yes" ? <div className="title">Come to Dubaiiiii</div> 
-         : <div className="title">Khana khane chalo ge mere saath?</div> }
+        {bunnyState === "yes" ? <div className="title">Hasta la vista Baby  !!!!</div> 
+         : <div className="title">Will you be my Valentine Ms. Hajira?</div> }
       
         <div className="animation">
           {bunnyState === "normal" && <Lottie options={bunnyPleaseOptions} height={300} width={300} />}
